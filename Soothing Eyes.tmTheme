@@ -7,7 +7,7 @@
 <plist version="1.0">
 <dict>
 	<key>name</key>
-	<string>Soothing Eye</string>
+	<string>Soothing Eyes</string>
 	<key>settings</key>
 	<array>
 		<dict>
@@ -29,7 +29,123 @@
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>Comment</string>
+			<string>C: &quot; 字符串</string>
+			<key>scope</key>
+			<string>punctuation.definition.string.begin.c, punctuation.definition.string.end.c</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string></string>
+				<key>foreground</key>
+				<string>#0000ff</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>C: constant 常量</string>
+			<key>scope</key>
+			<string>constant.numeric.c</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string></string>
+				<key>foreground</key>
+				<string>#800000</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>C: Function C函数</string>
+			<key>scope</key>
+			<string>support.function.C99.c, support.function.any-method.c, entity.name.function.c
+entity.name.function.c++</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string></string>
+				<key>foreground</key>
+				<string>#800080</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>C: Function Preprocessor 预处理函数</string>
+			<key>scope</key>
+			<string>entity.name.function.preprocessor.c</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string></string>
+				<key>foreground</key>
+				<string>#feddbc</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>C: include &lt;something.c&gt;</string>
+			<key>scope</key>
+			<string>meta.preprocessor.c.include string.quoted.other.lt-gt.include.c, meta.preprocessor.c.include punctuation.definition.string.begin.c, meta.preprocessor.c.include punctuation.definition.string.end.c</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string> italic</string>
+				<key>foreground</key>
+				<string>#0000ff</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>C: Keyword</string>
+			<key>scope</key>
+			<string>keyword.control.import.define.c, keyword.control.import.include.c</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string> bold</string>
+				<key>foreground</key>
+				<string>#004000</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>C: Meta Preprocessor</string>
+			<key>scope</key>
+			<string>meta.preprocessor.c.include, meta.preprocessor.macro.c</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string></string>
+				<key>foreground</key>
+				<string>#ffbfbf</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>C: Storage Type</string>
+			<key>scope</key>
+			<string>storage.type.c</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string></string>
+				<key>foreground</key>
+				<string>#86fc86</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Class name 类名</string>
+			<key>scope</key>
+			<string>entity.name.class, entity.name.type.class</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#800080</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Comment 注释</string>
 			<key>scope</key>
 			<string>comment</string>
 			<key>settings</key>
@@ -42,7 +158,18 @@
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>String</string>
+			<string>Continuation</string>
+			<key>scope</key>
+			<string>punctuation.separator.continuation</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#D30102</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>String 字符串</string>
 			<key>scope</key>
 			<string>string</string>
 			<key>settings</key>
@@ -53,18 +180,7 @@
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>StringNumber</string>
-			<key>scope</key>
-			<string>string</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#800080</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>Regexp</string>
+			<string>Regexp 正则表达式</string>
 			<key>scope</key>
 			<string>string.regexp</string>
 			<key>settings</key>
@@ -75,13 +191,24 @@
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>Number</string>
+			<string>Number 数字</string>
 			<key>scope</key>
 			<string>constant.numeric</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
 				<string>#800000</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Entity 实体</string>
+			<key>scope</key>
+			<string>entity</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#000080</string>
 			</dict>
 		</dict>
 		<dict>
@@ -119,17 +246,6 @@
 				<string></string>
 				<key>foreground</key>
 				<string>#808000</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>Class name</string>
-			<key>scope</key>
-			<string>entity.name.class, entity.name.type.class</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#800080</string>
 			</dict>
 		</dict>
 		<dict>
@@ -266,17 +382,6 @@
 			<dict>
 				<key>foreground</key>
 				<string>#feddbc</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>Continuation</string>
-			<key>scope</key>
-			<string>punctuation.separator.continuation</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#D30102</string>
 			</dict>
 		</dict>
 		<dict>
@@ -1243,110 +1348,6 @@
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>C: constant</string>
-			<key>scope</key>
-			<string>constant.numeric.c</string>
-			<key>settings</key>
-			<dict>
-				<key>fontStyle</key>
-				<string></string>
-				<key>foreground</key>
-				<string>#800000</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>C: Meta Preprocessor</string>
-			<key>scope</key>
-			<string>meta.preprocessor.c.include, meta.preprocessor.macro.c</string>
-			<key>settings</key>
-			<dict>
-				<key>fontStyle</key>
-				<string></string>
-				<key>foreground</key>
-				<string>#ffbfbf</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>C: Keyword</string>
-			<key>scope</key>
-			<string>keyword.control.import.define.c, keyword.control.import.include.c</string>
-			<key>settings</key>
-			<dict>
-				<key>fontStyle</key>
-				<string> bold</string>
-				<key>foreground</key>
-				<string>#000000</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>C: Function Preprocessor</string>
-			<key>scope</key>
-			<string>entity.name.function.preprocessor.c</string>
-			<key>settings</key>
-			<dict>
-				<key>fontStyle</key>
-				<string></string>
-				<key>foreground</key>
-				<string>#feddbc</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>C: include &lt;something.c&gt;</string>
-			<key>scope</key>
-			<string>meta.preprocessor.c.include string.quoted.other.lt-gt.include.c, meta.preprocessor.c.include punctuation.definition.string.begin.c, meta.preprocessor.c.include punctuation.definition.string.end.c</string>
-			<key>settings</key>
-			<dict>
-				<key>fontStyle</key>
-				<string> italic</string>
-				<key>foreground</key>
-				<string>#0000ff</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>C: Function</string>
-			<key>scope</key>
-			<string>support.function.C99.c, support.function.any-method.c, entity.name.function.c</string>
-			<key>settings</key>
-			<dict>
-				<key>fontStyle</key>
-				<string></string>
-				<key>foreground</key>
-				<string>#800080</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>C: &quot;</string>
-			<key>scope</key>
-			<string>punctuation.definition.string.begin.c, punctuation.definition.string.end.c</string>
-			<key>settings</key>
-			<dict>
-				<key>fontStyle</key>
-				<string></string>
-				<key>foreground</key>
-				<string>#0000ff</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>C: Storage Type</string>
-			<key>scope</key>
-			<string>storage.type.c</string>
-			<key>settings</key>
-			<dict>
-				<key>fontStyle</key>
-				<string></string>
-				<key>foreground</key>
-				<string>#86fc86</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
 			<string>diff: header</string>
 			<key>scope</key>
 			<string>meta.diff, meta.diff.header</string>
@@ -1924,7 +1925,7 @@
 	<key>colorSpaceName</key>
 	<string>sRGB</string>
 	<key>semanticClass</key>
-	<string>theme.light.soothing_eye</string>
+	<string>theme.light.soothing_eyes</string>
 	<key>author</key>
 	<string>Huzhidong</string>
 </dict>
